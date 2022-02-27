@@ -9,6 +9,7 @@ function clearClasses() {
 slides.forEach((slide) => {
     slide.addEventListener('click', () => {
         clearClasses();
+        clearTitles();
         slide.classList.add('active');
     });
 });
